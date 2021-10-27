@@ -27,6 +27,17 @@
 * 📚 [Twilio Webhooks](https://www.twilio.com/docs/usage/webhooks)
 * 📽 [Understanding Webhooks - freeCodeCamp](https://www.youtube.com/watch?v=41NOoEz3Tzc)
 
+
+#### TwiML Bin: TwilioQuest
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<Response>
+  <Message>Discover your power to change the world with code! https://twilio.com/quest</Message>
+</Response>
+```
+
+
 ### Video 6 - Responding dynamically
 
 #### /auto-responder
@@ -45,6 +56,10 @@ exports.handler = function(context, event, callback) {
 ```
 
 ### Video 7 - Review + Practice
+
+* 📚 [Helper Libraries](https://www.twilio.com/docs/libraries)
+* 🙋‍♂️ [Support - Adding a verified phone number](https://support.twilio.com/hc/en-us/articles/223180048-Adding-a-Verified-Phone-Number-or-Caller-ID-with-Twilio)
+
 
 ## Unit 2 - Programmable Voice
 
