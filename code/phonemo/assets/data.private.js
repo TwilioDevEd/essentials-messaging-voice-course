@@ -13,19 +13,23 @@ class Data {
         title: "Billionaires in Space",
         code: "astronaut",
         startTime: "2021-10-01T17:00:00.038Z",
-        speakers: [{
-          name: "Craig",
-          phoneNumber: "+15038368731"
-        }],
+        speakers: [
+          {
+            name: "Craig",
+            phoneNumber: "+15038368731",
+          },
+        ],
       },
       {
         title: "Taco Tuesdays should be every day",
         code: "taco",
         startTime: "2021-10-02T17:00:00.038Z",
-        speakers: [{
-          name: "Craig",
-          phoneNumber: "+15038368731"
-        }],
+        speakers: [
+          {
+            name: "Craig",
+            phoneNumber: "+15038368731",
+          },
+        ],
       },
     ];
   }
@@ -45,7 +49,7 @@ class Data {
     // NOT the messages log
     const client = this.context.getTwilioClient();
     const messages = await client.messages.list({
-      to: this.context.TWILIO_PHONE_NUMBER
+      to: this.context.TWILIO_PHONE_NUMBER,
     });
     return messages
       .filter((msg) => {
@@ -53,15 +57,14 @@ class Data {
         return action.command === "join" && action.code === talk.code;
       })
       .map((msg) => {
-        return {phoneNumber: msg.from};
-      })
-
+        return { phoneNumber: msg.from };
+      });
   }
 
   parseInput(input) {
     // eg: join tacos
     const action = {
-      input
+      input,
     };
     const normalized = input.trim().toLowerCase();
     const parts = normalized.split(/\s+/);
@@ -71,8 +74,8 @@ class Data {
     }
     return action;
   }
-};
+}
 
 module.exports = {
-  Data
+  Data,
 };

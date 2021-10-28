@@ -10,7 +10,7 @@ exports.handler = async (context, event, callback) => {
   console.log("Calling speakers...");
   let domainName = context.DOMAIN_NAME;
   if (domainName.startsWith("localhost")) {
-    domainName = "f4c2-97-120-39-113.ngrok.io"
+    domainName = "f4c2-97-120-39-113.ngrok.io";
   }
   for (const speaker of talk.speakers) {
     const participant = await client
@@ -50,22 +50,22 @@ exports.handler = async (context, event, callback) => {
   const registrantCallSids = results
     .filter((result) => result.status === "fulfilled")
     .map((result) => result.value);
-  
+
   results
-    .filter(result => result.status === "rejected")
-    .forEach(result => console.error(result.reason));
+    .filter((result) => result.status === "rejected")
+    .forEach((result) => console.error(result.reason));
 
   console.log(`
     Code: ${event.TalkCode}
     Speakers: ${speakerCallSids.length}
     Registrants: ${registrantCallSids.length}
-    Failed registrant attempts: ${registrantPhoneNumbers.length - registrantCallSids.length}
+    Failed registrant attempts: ${
+      registrantPhoneNumbers.length - registrantCallSids.length
+    }
   `);
   callback(null, {
     talkCode: event.TalkCode,
     speakerCallSids,
-    registrantCallSids
-  })
-
-
+    registrantCallSids,
+  });
 };
