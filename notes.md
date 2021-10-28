@@ -189,7 +189,11 @@ Here are some practice and example applications for you to experiment with. Let 
 
 ## Unit 3 - All Together Now
 
+You can view [all the completed PhoneMO source code](./code/phonemo).
+
 ### Video 1 - Project Introduction
+
+- 👀 [Most Popular Social Audio Apps in 2021](https://www.highfidelity.com/blog/most-popular-social-audio-apps)
 
 ### Video 2 - Use the Serverless Toolkit
 
@@ -202,12 +206,22 @@ Here are some practice and example applications for you to experiment with. Let 
 
 ### Video 4 - Use Private Data
 
+- 📚 [Using Private Assets](https://www.twilio.com/docs/runtime/assets#using-private-assets)
+- 👀 [String.prototype.split - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split)
+
 ### Video 5 - Allow for registration via SMS
 
 ### Video 6 - Call the registrants
 
+- 👀 [JavaScript Promises - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
+- 👀 [JavaScript async functions - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function)
+
 ### Video 7 - Deploy
 
+- 📚 [Validating Signatures from Twilio](https://www.twilio.com/docs/usage/webhooks/webhooks-security#validating-signatures-from-twilio)
+
 ### Video 8 - Send a follow-up survey
+
+- 👀 [SMS Guidelines](https://www.twilio.com/guidelines/sms)
 
 ### Video 9 - Wrap-up
