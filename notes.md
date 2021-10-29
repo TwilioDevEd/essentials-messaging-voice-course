@@ -38,6 +38,8 @@
 
 ### Video 6 - Responding dynamically
 
+- 👀 [Handle POST data in other web frameworks - MDN](https://developer.mozilla.org/en-US/docs/Learn/Forms/Sending_and_retrieving_form_data#on_the_server_side_retrieving_the_data)
+
 #### /auto-responder
 
 ```javascript
