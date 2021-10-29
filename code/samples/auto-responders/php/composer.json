@@ -1,0 +1,17 @@
+{
+    "name": "cdennis/php",
+    "require": {
+        "twilio/sdk": "^6.30"
+    },
+    "autoload": {
+        "psr-4": {
+            "Cdennis\\Php\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Craig Dennis",
+            "email": "cdennis@twilio.com"
+        }
+    ]
+}
