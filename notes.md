@@ -226,6 +226,7 @@ if (showHelp) {
 
 ### Video 6 - Call the registrants
 
+- ⚙️ [Console - Change your CPS - Calls Per Second](https://console.twilio.com/?frameUrl=/console/voice/settings)
 - 👀 [JavaScript Promises - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
 - 👀 [JavaScript async functions - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function)
 
@@ -240,9 +241,13 @@ if (showHelp) {
 
 ### Video 9 - Wrap-up
 
-- 📲 Give me a call or send me a text +15038368731 and let me know how you felt about the course! I used Studio to build both the Messaging and Voice flows.
+#### Practice
 
-#### Ideas for completing the project
+- 📲 Give me a call or send me a text +15038368731 and let me know how you felt about the course! I used Studio to build both the Messaging and Voice flows. Import the flows.
+- 💡 Build an entirely Serverless Voice Mail application! Wire up the incoming number to a Twilio Function that uses the [`<Record>`](https://www.twilio.com/docs/voice/twiml/record) verb. Turn on transcription and use the webhook to send the transcription to a number specified in an environment variable.
+- 👩‍💻 [CodeExchange - Call Forwarding with Voicemail](https://www.twilio.com/code-exchange/call-forwarding-voicemail)
+
+#### Ideas for the finishing touches for PhoneMO
 
 - [ ] 💡 Create a [client-side browser based phone](https://www.twilio.com/docs/voice/sdks/javascript) so anyone can listen in from the website
 - [ ] 💡 Host a static web page using [Twilio Assets](https://www.twilio.com/docs/runtime/assets) and expose the data through APIs to display the schedule of upcoming talks
