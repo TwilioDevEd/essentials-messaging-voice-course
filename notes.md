@@ -213,6 +213,17 @@ You can view [all the completed PhoneMO source code](./code/phonemo).
 
 ### Video 5 - Allow for registration via SMS
 
+#### Code for showing the schedule
+
+```javascript
+// Keep track of when a user does something unexpected and then flip the a showHelp boolean
+if (showHelp) {
+  const talks = data.getUpcomingTalks();
+  const options = talks.map(talk => `For ${talk.title}:  join ${talk.code}`);
+  twiml.message(options.join("\n"));
+}
+```
+
 ### Video 6 - Call the registrants
 
 - 👀 [JavaScript Promises - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
@@ -221,9 +232,17 @@ You can view [all the completed PhoneMO source code](./code/phonemo).
 ### Video 7 - Deploy
 
 - 📚 [Validating Signatures from Twilio](https://www.twilio.com/docs/usage/webhooks/webhooks-security#validating-signatures-from-twilio)
+- 📚 [Read only services and editing in the new Functions UI](https://www.twilio.com/docs/runtime/read-only-services-and-editing-functions-ui)
 
 ### Video 8 - Send a follow-up survey
 
 - 👀 [SMS Guidelines](https://www.twilio.com/guidelines/sms)
 
 ### Video 9 - Wrap-up
+
+- 📲 Give me a call or send me a text +15038368731 and let me know how you felt about the course! I used Studio to build both the Messaging and Voice flows.
+
+#### Ideas for completing the project
+
+- [ ] 💡 Create a [client-side browser based phone](https://www.twilio.com/docs/voice/sdks/javascript) so anyone can listen in from the website
+- [ ] 💡 Host a static web page using [Twilio Assets](https://www.twilio.com/docs/runtime/assets) and expose the data through APIs to display the schedule of upcoming talks
