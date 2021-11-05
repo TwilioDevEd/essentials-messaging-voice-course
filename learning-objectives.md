@@ -47,11 +47,15 @@
 
 * Recall that voice is programmable with reusable building code blocks
 * Recognize that PSTN stands for Public Switched Telephone Network
-Video 2 - Receive a Call
+
+### Video 2 - Receive a Call
+
 * Modify settings on the phone number to handle incoming calls
 * Use <Say> in a TwiML response to perform text-to-speech.
 * Use <Play> in a TwiML response to play an audio file
-Video 3 - Gather Input
+
+### Video 3 - Gather Input
+
 * Understand that <Gather> is used to gather DTMF (Dual Tone Multi Frequency)
 * Explain that the URL in the action parameter on the <Gather> will receive the Digits parameter in an HTTP request.
 * Use a nested <Play> in <Gather> to perform a barge-in (interrupt the audio)
@@ -86,6 +90,7 @@ Video 3 - Gather Input
 * Recall that the participant list of a Conference contains active calls only
 
 ### Video 4 - Use Private Data
+
 * Produce a private asset and import it into a Function
 
 ### Video 5 - Allow for registration via SMS
