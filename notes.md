@@ -152,6 +152,18 @@ exports.handler = function (context, event, callback) {
 };
 ```
 
+#### TwiML Bin: Get the next caller in the queue
+
+If you had a phone number you could set a dial in number to use the following TwiML Bin on incoming calls. You'd then just have the manager call this number and they'd get the next caller in the queue!
+
+```xml
+<Response>
+    <Dial>
+        <Queue>managers</Queue>
+    </Dial>
+</Response>
+```
+
 ### Video 4 - Create an Outbound Call
 
 - 📚 [Twilio CLI](https://twil.io/cli)
@@ -159,6 +171,7 @@ exports.handler = function (context, event, callback) {
 - 📚 [Call Resource Status Callback](https://www.twilio.com/docs/voice/api/call-resource#statuscallback)
 - 📚 [Messaging Status Callback pattern](https://www.twilio.com/docs/usage/webhooks/sms-webhooks#type-2-status-callbacks)
 - 📚 [Answering Machine Detection](https://www.twilio.com/docs/voice/answering-machine-detection)
+- 👩‍💻 [Modify Calls in Progress - Tutorial](https://www.twilio.com/docs/voice/tutorials/how-to-modify-calls-in-progress)
 
 #### Function: /status-displayer
 
@@ -195,6 +208,7 @@ You can view [all the completed PhoneMO source code](./code/phonemo).
 
 ### Video 1 - Project Introduction
 
+- 🎁 Looking for a promo code to upgrade your account out of trial mode? Send me a text message with the word `promo` in it.
 - 👀 [Most Popular Social Audio Apps in 2021](https://www.highfidelity.com/blog/most-popular-social-audio-apps)
 
 ### Video 2 - Use the Serverless Toolkit
@@ -208,10 +222,18 @@ You can view [all the completed PhoneMO source code](./code/phonemo).
 
 ### Video 4 - Use Private Data
 
+⏰⏰⏰⏰⏰⏰
+
+Whoops! I mistakenly put `muted: false` but I meant `muted: true`! We want callers that aren't the speakers to be silent. Sorry about that!
+
+⏰⏰⏰⏰⏰⏰
+
 - 📚 [Using Private Assets](https://www.twilio.com/docs/runtime/assets#using-private-assets)
 - 👀 [String.prototype.split - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split)
 
 ### Video 5 - Allow for registration via SMS
+
+- 👀 [switch statement - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch)
 
 #### Code for showing the schedule
 
@@ -238,6 +260,7 @@ if (showHelp) {
 ### Video 8 - Send a follow-up survey
 
 - 👀 [SMS Guidelines](https://www.twilio.com/guidelines/sms)
+- 👀 [What is Net Promoter Score or NPS](https://www.netpromoter.com/know/)
 
 ### Video 9 - Wrap-up
 
