@@ -8,7 +8,7 @@ conda-package-handling==1.3.11
 cryptography==2.7
 Flask==1.1.1
 http-prompt==2.1.0
-httpie==2.4.0
+httpie==3.2.3
 idna==2.8
 itsdangerous==1.1.0
 Jinja2==2.11.2
